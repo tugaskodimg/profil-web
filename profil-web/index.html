@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya | Portofolio & Informasi Diri</title>
+  
+  <!-- Meta SEO & Sharing Publik -->
+  <meta name="description" content="Halaman profil profesional dan portofolio karya. Hubungi saya untuk kolaborasi atau proyek baru.">
+  <meta name="author" content="Keano">
+  <meta property="og:title" content="Profil Saya | Portofolio Profesional">
+  <meta property="og:description" content="Lihat profil, keahlian, dan portofolio proyek terbaru saya.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="KnooMe Beranda">
+        <span class="logo-text">Knoo<span class="highlight">Me</span></span>
+      </a>
+
+      <!-- Menu Navigasi Desktop & Mobile -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#projects" class="nav-link">Portofolio</a></li>
+          <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+          <li><a href="#contact" class="nav-link nav-btn-cta">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aksi Kanan Navbar: Tombol Pengatur Tema & Menu Mobile -->
+      <div class="nav-actions-right">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Ubah mode tema" title="Ganti Mode Gelap/Terang">
+          <span class="theme-icon-wrap" id="theme-icon-wrap">
+            <svg class="theme-svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </span>
+        </button>
+
+        <!-- Tombol Hamburger Mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Buka navigasi menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span id="dynamic-greeting">Selamat Datang</span> &bull; Terbuka untuk Peluang Baru
+          </div>
+          <h1 class="hero-title">
+            Halo, Saya <span class="name-blue">Keano</span>
+          </h1>
+          <p class="hero-subtitle">
+            Orang biasa yang berusaha. Tetap santai tapi berkembang
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <span>Hubungi Saya</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>Lihat Portofolio</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Tahun Belajar & Berkarya</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Komitmen Kualitas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="avatar-card">
+            <div class="avatar-wrapper">
+              <!-- Anda dapat mengganti gambar ini dengan foto profil asli Anda -->
+              <img src="profile.jpeg" 
+                   alt="Foto Profil" 
+                   class="avatar-img" 
+                   id="profile-img">
+            </div>
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">💻</span>
+              <div>
+                <p class="badge-title">Fullstack Passionate</p>
+                <p class="badge-desc">Modern Web Tech</p>
+              </div>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <span class="badge-icon">🚀</span>
+              <div>
+                <p class="badge-title">Clean Code</p>
+                <p class="badge-desc">Performance First</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="section section-light" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tentang Saya</span>
+          <h2 class="section-title">Mengenal Lebih Dekat</h2>
+          <p class="section-description">
+            Kombinasi antara logika pemrograman, estetika desain modern, dan fokus pada kenyamanan pengguna.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon">🎯</div>
+            <h3>Fokus & Visi</h3>
+            <p>
+              Membangun solusi perangkat lunak yang tidak hanya berfungsi baik di balik layar, tetapi juga memanjakan pengguna dengan tampilan yang rapi, ringan, dan intuitif.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">⚡</div>
+            <h3>Kinerja & Standar</h3>
+            <p>
+              Mengutamakan kode bersih, aksesibilitas ramah publik, responsif di berbagai perangkat smartphone maupun desktop, serta waktu pemuatan yang super cepat.
+            </p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🤝</div>
+            <h3>Kolaboratif</h3>
+            <p>
+              Terbuka untuk diskusi tim, proyek freelance, kontribusi open source, maupun kesempatan kerja profesional jangka panjang.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section class="section section-light binary-green-zone" id="projects">
+      
+      <!-- Dekorasi Transisi Biner (1 Gambar Saja: di atas blur, di bawah kartu) -->
+      <div class="binary-transition-box" aria-hidden="true">
+        <img src="binary-transition.svg" class="binary-transition-img" alt="" loading="eager">
+      </div>
+
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Karya & Proyek</span>
+          <h2 class="section-title">Portofolio Pilihan</h2>
+          <p class="section-description">
+            Beberapa hasil karya yang pernah saya bangun. Klik tombol filter untuk menyaring berdasarkan kategori.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="tools">Utility & Tools</button>
+          <button class="filter-btn" data-filter="game">Games</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+          
+          <!-- Card 1 -->
+          <article class="project-card" data-category="tools">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80" alt="Number Base Converter">
+              <span class="project-badge">Utility & Tools</span>
+            </div>
+            <div class="project-info">
+              <h3>Number Base Converter Pro</h3>
+              <p>Aplikasi web konversi bilangan real-time (Biner, Heksadesimal, Oktal, Desimal) dengan kalkulator interaktif dan penjelasan langkah perhitungan.</p>
+              <div class="tech-tags">
+                <span>Vanilla JS</span>
+                <span>Algorithm</span>
+                <span>UI Clean</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="link-btn">Demo Live</a>
+                <a href="#" class="link-btn link-ghost">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" data-category="game">
+            <div class="project-thumb">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=80" alt="Jeje Jumper Game">
+              <span class="project-badge">Games</span>
+            </div>
+            <div class="project-info">
+              <h3>Jeje Jumper Arcade Web</h3>
+              <p>Game platformer web 2D ringan berbasis HTML5 Canvas dan JavaScript dengan sistem deteksi tabrakan fisika dan papan peringkat lokal.</p>
+              <div class="tech-tags">
+                <span>HTML5 Canvas</span>
+                <span>Game Loop</span>
+                <span>Sound FX</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="link-btn">Mainkan</a>
+                <a href="#" class="link-btn link-ghost">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE / TIMELINE ================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Perjalanan</span>
+          <h2 class="section-title">Riwayat & Pengalaman</h2>
+          <p class="section-description">
+            Jejak langkah pengalaman kerja, kolaborasi, dan pendidikan.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2026 — Sekarang</span>
+              <h3 class="timeline-role">Pendidikan / Studi Terkait Teknologi</h3>
+              <p class="timeline-org">Informatika & Pengembangan Perangkat Lunak</p>
+              <p class="timeline-desc">
+                Mempelajari fundamental algoritma, struktur data, desain antarmuka pengguna, dan arsitektur web modern.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2023 — Sekarang</span>
+              <h3 class="timeline-role">Junior Web Developer & Contributor</h3>
+              <p class="timeline-org">Komunitas Teknologi & Open Source</p>
+              <p class="timeline-desc">
+                Mengembangkan berbagai modul aplikasi web, berkolaborasi menggunakan Git, dan memecahkan bug pada proyek komunitas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="section section-light" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hubungi Saya</span>
+          <h2 class="section-title">Mari Terhubung & Berkolaborasi</h2>
+          <p class="section-description">
+            Punya ide proyek, tawaran pekerjaan, atau sekadar ingin menyapa? Kirim pesan langsung melalui formulir di bawah ini!
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Form Kontak -->
+          <div class="contact-form-box">
+            <div class="contact-form-header">
+              <h3>Informasi Kontak</h3>
+              <p>Silakan hubungi saya melalui jalur resmi di bawah ini. Saya akan merespons sesegera mungkin.</p>
+            </div>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Nama Lengkap <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Misal: Budi Santoso" required>
+                <span class="form-error" id="name-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Alamat Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="nama@domain.com" required>
+                <span class="form-error" id="email-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subjek Pesan</label>
+                <input type="text" id="subject" name="subject" placeholder="Diskusi Proyek Web / Tawaran Kolaborasi">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Pesan Anda <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan atau detail kebutuhan Anda di sini..." required></textarea>
+                <span class="form-error" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Kirim Pesan</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>&copy; <span id="current-year">2026</span> <strong>Keano</strong>. Seluruh hak cipta dilindungi.</p>
+        <p class="footer-sub">Dibuat dengan HTML5, CSS3 murni & JavaScript interaktif.</p>
+      </div>
+      <div class="footer-right">
+        <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">
+          Atas
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Popup -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
